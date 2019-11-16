@@ -1,0 +1,51 @@
+Restaurant recommendations for chinese,mexican,italian,american,south indian,north indian food in Bangalore are:
+1. Restaurant Name: Mumbai Tiffin
+ Restaurant locality Address: 248, 19th Main, 15th Cross, Near Nilgiris Super Store, Sector 4, HSR, Bangalore
+ Average budget for two people: 450.0
+ Zomato user rating: 4.4
+
+2. Restaurant Name: Khawa Karpo
+ Restaurant locality Address: 50/1,  Near Jyothi Nivas College, Koramangala 5th Block, Bangalore
+ Average budget for two people: 350.0
+ Zomato user rating: 4.3
+
+3. Restaurant Name: Wok Paper Scissors
+ Restaurant locality Address: 50/1, Opposite Jyothi Niwas College, Koramangala 5th Block, Bangalore
+ Average budget for two people: 600.0
+ Zomato user rating: 4.3
+
+4. Restaurant Name: Green Onion
+ Restaurant locality Address: 43/44, Chandraprabha Complex, Off Residency Road, Residency Road, Bangalore
+ Average budget for two people: 550.0
+ Zomato user rating: 4.3
+
+5. Restaurant Name: Hotel Nalapaka
+ Restaurant locality Address: 28, 12th Main, 1st Block, Rajajinagar, Bangalore
+ Average budget for two people: 400.0
+ Zomato user rating: 4.3
+
+6. Restaurant Name: Mavalli Tiffin Room (MTR)
+ Restaurant locality Address: Namma Metro Pillar 62, 100 Feet Road, Indiranagar, Bangalore
+ Average budget for two people: 300.0
+ Zomato user rating: 4.3
+
+7. Restaurant Name: MTR 1924
+ Restaurant locality Address: 29, Ground Floor, White House, St. Marks Road, Bangalore
+ Average budget for two people: 300.0
+ Zomato user rating: 4.3
+
+8. Restaurant Name: Nagarjuna
+ Restaurant locality Address: 138, 1st Cross, KHB Colony, Koramangala 5th Block, Bangalore
+ Average budget for two people: 700.0
+ Zomato user rating: 4.3
+
+9. Restaurant Name: Aligarh House
+ Restaurant locality Address: 34/154&155, 1st Floor, 11th Cross Somasundrapalya, Sector 2, HSR, Bangalore
+ Average budget for two people: 400.0
+ Zomato user rating: 4.3
+
+10. Restaurant Name: Szechuan Dragon
+ Restaurant locality Address: 8, 2nd Floor, 1st Main, Arush Trapeze, Mount Joy Road, Behind BMS College of Engineering, Hanumanthnagar, Banashankari, Bangalore
+ Average budget for two people: 500.0
+ Zomato user rating: 4.2
+

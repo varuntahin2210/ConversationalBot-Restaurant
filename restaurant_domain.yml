@@ -1,0 +1,139 @@
+slots:
+  location:
+    type: text
+  cuisine:
+    type: list
+  price:
+    type: list
+  email:
+    type: list
+  option:
+    type: list
+  result_found:
+    type: categorical
+    values:
+    - 'yes'
+    - 'no'
+  location_supported:
+    type: categorical
+    values:
+    - 'yes'
+    - 'no'
+
+entities:
+- location
+- cuisine
+- price
+- email
+- option
+
+intents:
+ - greet
+ - restaurant_search
+ - affirm
+ - deny
+ - more_information
+ - send_email
+ - goodbye
+ - get_option 
+
+
+templates:
+  utter_greet:
+    - "hey there! How may I help you"
+    - "Hi, How can I help you!"
+    - "Hey, How is it going. How May I help you Today"
+    - "Hello, This is restaurant search bot. How may I help you?"
+    - "Namaste, Where would you like to eat today? I can help you with restaurant search"
+  utter_goodbye:
+    - "goodbye :("
+    - "Bye-bye"
+    - "Tata, See you soon"
+    - "Hope I was helpful. Take care."    
+    - "Goodbye, have a great day!"
+  utter_default:
+    - "I did not understand that could you please repeat?"
+  utter_ask_cuisine: 
+    - text: "what kind of cuisine would you like? select from options 1,2,3,4,5,6"
+      buttons:
+      - title: "Chinese"
+        payload: "Chinese"
+      - title: "Mexican"
+        payload: "Mexican"
+      - title: "Italian"
+        payload: "Italian"
+      - title: "American"
+        payload: "American"
+      - title: "South Indian"
+        payload: "South Indian"
+      - title: "North Indian"
+        payload: "North Indian"
+  utter_ask_howcanhelp:
+    - "how can I help you?"
+  utter_ask_location:
+    - "In what city?"
+    - "In which city are you looking for restaurants?"
+  utter_no_service_location:
+    - "Unfortunately, We do not operate in this area yet. Please specify some other location"
+    - "Sorry, we do not operate in this area yet. Please specify some other location"
+  utter_ask_price:
+    - text: "What average price range are you looking at for two people? select from options 1,2,3"
+      buttons:
+      - title: "Lesser than Rs. 300"
+        payload: "Lesser than Rs. 300"
+      - title: "Rs. 300 to 700"
+        payload: "Rs. 300 to 700"
+      - title: "More than Rs. 700"
+        payload: "More than Rs. 700" 
+  utter_thank:
+    - "It's okay. Do you need help with anything else?"
+    - "Sure. What else can I do for you?"
+  utter_result_not_found:
+    - "Sorry didn't find any matching results. May I help you with any other search?"
+    - "No restaurants found! Can I help you with something else?"
+  utter_email_required:
+    - "Would you like me to send the top 10 results via email?" 
+    - "Shall I send you the top 10 results via email?"   
+    - "Would you like to have the top 10 results emailed to you?"
+  utter_ask_email:
+    - "Could you please share your email address?"
+    - "Please provide your email addresses"
+    - "Kindly enter your email addresses"
+  utter_email_sent:
+    - "Email has been sent to the given email address. Have a nice day!"
+    - "I have emailed the details to you. Good bye!"
+  utter_email_error:
+    - "Sorry, something went wrong, could not send the email."
+    - "Email could not be sent, apologise for the inconvience." 
+  utter_incorrect_search:
+    - "Can I help you with anything else?"
+  utter_incorrect_option:
+    - "Sorry, Did not understand the input.Please enter again."
+  utter_restart:
+    - ""
+
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_ask_cuisine
+- utter_ask_howcanhelp
+- utter_ask_location
+- utter_no_service_location
+- utter_ask_price
+- utter_thank
+- utter_result_not_found
+- utter_email_required
+- utter_ask_email
+- utter_email_sent
+- utter_email_error 
+- utter_incorrect_search
+- utter_restart
+- actions.CitySearch
+- actions.RestaurantSearch
+- actions.SendEmail
+- actions.GetCuisine
+- actions.GetPrice
+- actions.Restart
+- actions.ResetAllSlots

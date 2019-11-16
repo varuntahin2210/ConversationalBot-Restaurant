@@ -1,0 +1,170 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_ask_cuisine
+- utter_ask_howcanhelp
+- utter_ask_location
+- utter_no_service_location
+- utter_ask_price
+- utter_thank
+- utter_result_not_found
+- utter_email_required
+- utter_ask_email
+- utter_email_sent
+- utter_email_error
+- utter_incorrect_search
+- utter_restart
+- action_get_city
+- action_restaurant_search
+- action_send_email
+- action_get_cuisine
+- action_get_price
+- action_restarted
+- action_reset
+actions:
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_ask_cuisine
+- utter_ask_howcanhelp
+- utter_ask_location
+- utter_no_service_location
+- utter_ask_price
+- utter_thank
+- utter_result_not_found
+- utter_email_required
+- utter_ask_email
+- utter_email_sent
+- utter_email_error
+- utter_incorrect_search
+- utter_restart
+- actions.CitySearch
+- actions.RestaurantSearch
+- actions.SendEmail
+- actions.GetCuisine
+- actions.GetPrice
+- actions.Restart
+- actions.ResetAllSlots
+config:
+  store_entities_as_slots: true
+entities:
+- location
+- cuisine
+- price
+- email
+- option
+intents:
+- greet
+- restaurant_search
+- affirm
+- deny
+- more_information
+- send_email
+- goodbye
+- get_option
+slots:
+  cuisine:
+    initial_value: null
+    type: rasa_core.slots.ListSlot
+  email:
+    initial_value: null
+    type: rasa_core.slots.ListSlot
+  location:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  location_supported:
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - yes
+    - no
+  option:
+    initial_value: null
+    type: rasa_core.slots.ListSlot
+  price:
+    initial_value: null
+    type: rasa_core.slots.ListSlot
+  result_found:
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - yes
+    - no
+templates:
+  utter_ask_cuisine:
+  - buttons:
+    - payload: Chinese
+      title: Chinese
+    - payload: Mexican
+      title: Mexican
+    - payload: Italian
+      title: Italian
+    - payload: American
+      title: American
+    - payload: South Indian
+      title: South Indian
+    - payload: North Indian
+      title: North Indian
+    text: what kind of cuisine would you like? select from options 1,2,3,4,5,6
+  utter_ask_email:
+  - text: Could you please share your email address?
+  - text: Please provide your email addresses
+  - text: Kindly enter your email addresses
+  utter_ask_howcanhelp:
+  - text: how can I help you?
+  utter_ask_location:
+  - text: In what city?
+  - text: In which city are you looking for restaurants?
+  utter_ask_price:
+  - buttons:
+    - payload: Lesser than Rs. 300
+      title: Lesser than Rs. 300
+    - payload: Rs. 300 to 700
+      title: Rs. 300 to 700
+    - payload: More than Rs. 700
+      title: More than Rs. 700
+    text: What average price range are you looking at for two people? select from
+      options 1,2,3
+  utter_default:
+  - text: I did not understand that could you please repeat?
+  utter_email_error:
+  - text: Sorry, something went wrong, could not send the email.
+  - text: Email could not be sent, apologise for the inconvience.
+  utter_email_required:
+  - text: Would you like me to send the top 10 results via email?
+  - text: Shall I send you the top 10 results via email?
+  - text: Would you like to have the top 10 results emailed to you?
+  utter_email_sent:
+  - text: Email has been sent to the given email address. Have a nice day!
+  - text: I have emailed the details to you. Good bye!
+  utter_goodbye:
+  - text: goodbye :(
+  - text: Bye-bye
+  - text: Tata, See you soon
+  - text: Hope I was helpful. Take care.
+  - text: Goodbye, have a great day!
+  utter_greet:
+  - text: hey there! How may I help you
+  - text: Hi, How can I help you!
+  - text: Hey, How is it going. How May I help you Today
+  - text: Hello, This is restaurant search bot. How may I help you?
+  - text: Namaste, Where would you like to eat today? I can help you with restaurant
+      search
+  utter_incorrect_option:
+  - text: Sorry, Did not understand the input.Please enter again.
+  utter_incorrect_search:
+  - text: Can I help you with anything else?
+  utter_no_service_location:
+  - text: Unfortunately, We do not operate in this area yet. Please specify some other
+      location
+  - text: Sorry, we do not operate in this area yet. Please specify some other location
+  utter_restart:
+  - text: ''
+  utter_result_not_found:
+  - text: Sorry didn't find any matching results. May I help you with any other search?
+  - text: No restaurants found! Can I help you with something else?
+  utter_thank:
+  - text: It's okay. Do you need help with anything else?
+  - text: Sure. What else can I do for you?
